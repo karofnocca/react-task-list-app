@@ -1,9 +1,10 @@
 import { useState } from "react";
 
+
 function App() {
   const [tasks, setTasks] = useState([]);
-  const [sortType, setSortType] = useState("date"); 
-  const [sortOrder, setSortOrder] = useState("asc"); 
+  const [sortType, setSortType] = useState("date");
+  const [sortOrder, setSortOrder] = useState("asc");
   const [openSection, setOpenSection] = useState({
     taskList: false,
     tasks: true,
@@ -76,7 +77,6 @@ function App() {
         >
           +
         </button>
-
         <div className="sort-controls">
           <button
             className={`sort-button ${sortType === "date" ? "active" : ""}`}
